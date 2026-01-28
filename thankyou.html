@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Thank You</title>
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Segoe UI', Arial, sans-serif;
+
+  /* SAME GRID BACKGROUND */
+  background: 
+    linear-gradient(#eaeaea 1px, transparent 1px),
+    linear-gradient(90deg, #eaeaea 1px, transparent 1px);
+  background-size: 40px 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Top text */
+.top-text {
+  font-size: 30px;
+  font-weight: bold;
+  color: #16a34a;
+  margin-bottom: 25px;
+}
+
+/* GIF */
+.gif img {
+  width: 220px;
+  margin-bottom: 30px;
+}
+
+/* Hug Button */
+button {
+  padding: 14px 45px;
+  border-radius: 30px;
+  border: none;
+  background: #ec4899;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.08);
+  background: #db2777;
+}
+</style>
+</head>
+
+<body>
+
+  <!-- Top Text -->
+  <div class="top-text">
+    Sukriya Janneman apka 😭🤌
+  </div>
+
+  <!-- Center GIF -->
+  <div class="gif">
+    <!-- Apna hug / love GIF yaha change kar sakta hai -->
+    <img src="2.gif">
+  </div>
+
+  <!-- Hug Button -->
+  <button onclick="window.location.href='hugyou.html'">
+    Hug 🤗
+  </button>
+
+</body>
+</html>

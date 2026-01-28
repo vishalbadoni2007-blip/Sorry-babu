@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>POV Page</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background: 
+        linear-gradient(#eaeaea 1px, transparent 1px),
+        linear-gradient(90deg, #eaeaea 1px, transparent 1px);
+      background-size: 40px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .pov {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: black;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 25px 20px;
+      width: 280px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      animation: pop 0.4s ease;
+    }
+
+    @keyframes pop {
+      from { transform: scale(0.7); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .card h2 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .card img {
+      width: 120px;
+      margin-bottom: 15px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    .btn {
+      border: none;
+      padding: 10px 25px;
+      border-radius: 20px;
+      font-size: 14px;
+      cursor: pointer;
+      color: white;
+    }
+
+    .ok { background: #a855f7; }
+    .no { background: #ec4899; }
+  </style>
+</head>
+<body>
+
+  <div class="pov">
+    LOVE YOU DARLING 😭
+  </div>
+
+  <div class="card">
+    <h2>Chal Chikni, Photo Bhej 😏</h2>
+    
+    <img src="1.png">
+
+    <div class="buttons">
+      <button class="btn ok" onclick="window.location.href='ok.html'">Ok</button>
+      <button class="btn no" onclick="window.location.href='no.html'">Nahi</button>
+    </div>
+  </div>
+
+</body>
+</html>
